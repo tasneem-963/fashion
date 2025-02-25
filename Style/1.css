@@ -1,0 +1,832 @@
+
+:root {
+    --main-color: #0a6b7c;
+    --moz-background-color:#EFF9F7;
+  }
+  
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    background-color: #EFF9F7;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.Header{
+    background-color: #EFF9F7;
+    position: relative;
+    z-index:10;
+  }
+.Header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .container .logo h1{
+    color: var(--main-color);
+    font-family: "Ysabeau SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+
+    line-height: 50px;
+}
+.Header .container .logo h1::first-letter{
+    font-size: 30px;
+}
+.Header .container ul{
+    display: flex;
+}
+.Header .container ul li{
+    margin: 0 10px;
+    color: #0C6170;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.Header .container .account #login{
+    background-color: #EFF9F7 ;
+    color: var(--main-color);
+    font-size: 17px;
+    padding: 15px;
+    border: none;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+.Header .container .account #signup{
+    background-color: var(--main-color)  ;
+    color: #EFF9F7;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    text-decoration: none;
+}
+ /* End Heading */
+/* Start Landing */
+ .landing{
+    min-height: 150vh;
+    position: relative;
+    top:-100px;
+    z-index:0;
+    font-family: "Ysabeau SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+ }
+ .landing .overlay{   
+  background-image: url(../Landing_Photo.jpg);
+  background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+ .landing .container{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+ }
+ .landing .container .landing_icons{
+    color: var(--main-color);
+    margin: 150px 0;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+ }
+ .landing .container .landing_icons i{
+    padding-left: 40px;
+ }
+ .landing .container .landing_discription{
+     width: 350px;
+     background: #EFF9F7;
+     margin-top: 300px;
+     position: absolute;
+     right: 10px;
+    }
+    .landing .container .landing_discription .title{
+        margin: 50px 20px;
+        color: var(--main-color);
+        font-size: 20px;
+        font-family: "Ysabeau SC", serif;
+        font-optical-sizing: auto;
+    }
+    .landing .container .landing_discription h2{
+        color: #37BEB0;
+        font-size: 40px ;
+        margin: 10px 20px;
+    }
+    .landing .container .landing_discription p{
+        color: var(--main-color);
+        margin: 10px 20px;
+    }
+    .landing .container .landing_discription .button{
+        display: inline-block;
+        background-color: #37BEB0;
+        margin: 30px 20px;
+        padding: 20px 30px;
+        color: white;
+        border-radius: 25px;
+        
+    }
+
+
+.Trending_collection .container .title{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  font-size: 60px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.Trending_collection .container .title::after{
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 60%;
+  height: 2px;
+}
+.Trending_collection .container .discription{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin: 30px 0;
+  font-size: 24px;
+}
+.Trending_collection .container .cards{
+  display: flex;
+  position: relative;
+}
+.Trending_collection .container .cards :first-child ,.Trending_collection .container .cards :nth-child(3){
+  width: 300px;
+}
+.Trending_collection .container .cards :nth-child(2){
+  width: 400px;
+}
+
+.Trending_collection .container .cards .box{
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.342);
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+}
+.Trending_collection .container .cards .box .image{
+  max-width: 70%;
+  margin-top: 20px;
+
+}
+.Trending_collection .container .cards .box .image img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.Trending_collection .container .cards .box p {
+  padding-left: 90px;
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.Trending_collection .container .cards  .box:nth-child(2) p{
+  padding-left: 60px ;
+}
+.Trending_collection .container .cards .box .price{
+  width: 85%;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Trending_collection .container .cards .box .price span:first-child{
+  font-family: "Ysabeau SC", serif;
+  margin-left: 20px;
+
+}
+.Trending_collection .container .cards .box .price .react{
+  width: 10px;
+  display: flex;
+  margin-right: 20px;
+}
+.Trending_collection .container .cards .box .price .react i{
+  padding: 2px;
+  font-size: 24px;
+}
+.Trending_collection .container .cards .veiwAll{
+  font-family: "Ysabeau SC", serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+  width: 300px;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--main-color);
+}
+
+.Summer_collection{
+  margin: 100px 0;
+}
+.Summer_collection .container .title{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  font-size: 60px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.Summer_collection .container .title::after{
+  content: "";
+  position: absolute;
+  right:-10px;
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 60%;
+  height: 2px;
+}
+.Summer_collection .container .discription{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin: 30px 0;
+  font-size: 24px;
+  text-align: right;
+}
+.Summer_collection .container .cards{
+  display: flex;
+  position: relative;
+}
+.Summer_collection .container .cards .box:first-child ,.Summer_collection .container .cards .box:nth-child(3) {
+  width: 200px;
+
+  margin-top: 20%;
+}
+.Summer_collection .container .cards .box:nth-child(2){
+  width: 300px;
+}
+.Summer_collection .container .cards .box:nth-child(4){
+  width:420px;
+}
+
+.Summer_collection .container .cards .box{
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.342);
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+}
+.Summer_collection .container .cards .box .image{
+  max-width: 70%;
+  margin-top: 20px;
+
+}
+.Summer_collection .container .cards .box .image img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.Summer_collection .container .cards .box p {
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin-left:-20px ;
+}
+.Summer_collection .container .cards  .box:nth-child(2) p{
+  margin-left:-20px ;
+}
+.Summer_collection .container .cards .box:nth-child(4) p{
+  margin-left: -90px;
+}
+.Summer_collection .container .cards .box .price{
+  width: 100%;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Summer_collection .container .cards .box .price span:first-child{
+  font-family: "Ysabeau SC", serif;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.Summer_collection .container .cards .box .price .react{
+  display: flex;
+  margin-right: 2%;
+}
+.Summer_collection .container .cards .box .price .react i{
+  padding: 2px;
+  font-size: 24px;
+}
+.Summer_collection .container .cards .veiwAll{
+  font-family: "Ysabeau SC", serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 300px;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--main-color);
+
+}
+
+.Winter_collection{
+  margin: 100px 0;
+}
+.Winter_collection .container .title{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  font-size: 60px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.Winter_collection .container .title::after{
+  content: "";
+  position: absolute;
+  left:-10px;
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 60%;
+  height: 2px;
+}
+.Winter_collection .container .discription{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin: 30px 0;
+  font-size: 24px;
+}
+.Winter_collection .container .cards{
+  display: flex;
+  position: relative;
+}
+.Winter_collection .container .cards .box:first-child {
+  width: 420px;
+}
+.Winter_collection .container .cards .box:nth-child(2){
+  width: 200px;
+  margin-top: 20%;
+}
+.Winter_collection .container .cards .box:nth-child(3){
+  width:340px;
+
+}
+.Winter_collection .container .cards .box:nth-child(4){
+  width:200px;
+  margin-top: 8%;
+}
+
+.Winter_collection .container .cards .box{
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.342);
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+}
+.Winter_collection .container .cards .box .image{
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+.Winter_collection .container .cards .box .image img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.Winter_collection .container .cards .box:first-child .image img{
+  height: 300px;
+}
+.Winter_collection .container .cards .box p {
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+}
+.Winter_collection .container .cards .box:first-child p,.Winter_collection .container .cards  .box:nth-child(3) p{
+  margin-left: -120px;
+}
+.Winter_collection .container .cards  .box:nth-child(2) p ,.Winter_collection .container .cards .box:nth-child(4) p{
+  margin-left: -40px;
+}
+
+.Winter_collection .container .cards .box .price{
+  width: 100%;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Winter_collection .container .cards .box .price span:first-child{
+  font-family: "Ysabeau SC", serif;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.Winter_collection .container .cards .box .price .react{
+  display: flex;
+  margin-right: 2%;
+}
+.Winter_collection .container .cards .box .price .react i{
+  padding: 2px;
+  font-size: 24px;
+}
+.Winter_collection .container .cards .veiwAll{
+  font-family: "Ysabeau SC", serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+  width: 300px;
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--main-color);
+}
+
+.Our_Clients{
+  margin: 100px 0;
+}
+.Our_Clients .container {
+  border-top: solid var(--main-color) 1px;
+  padding-top: 30px;
+}
+.Our_Clients .container .title{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  font-size: 60px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+.Our_Clients .container .discription{
+  font-family: "Ysabeau SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin: 30px 0;
+  font-size: 24px;
+  text-align: 
+}
+.footer .container {
+  border-top: solid var(--main-color) 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .contact_us .logo{
+  color: var(--main-color);
+  font-family: "Ysabeau SC", serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 10px 0;
+}
+.footer .container .contact_us .connect_info p{
+  color: var(--main-color);
+  margin: 5px;
+
+}
+.footer .container .contact_us .connect_info p:first-child{
+  font-weight: 700;
+  font-size: 18px;
+}
+.footer .container .more_info{
+  display: flex;
+  color: var(--main-color);
+}
+.footer .container .more_info .info{
+  margin: 0 20px;
+}
+.footer .container .more_info .info p:first-child{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .container .more_info .info p:last-child ul li{
+  margin: 5px 0;
+}
+.Login_heading{
+  font-family: "Ysabeau SC";
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login_body{
+  width: 100%;
+  font-family: "Ysabeau SC";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px ;
+
+}
+.login_body .user_info{
+  width: 50%;
+  display: flex;
+  flex-direction:column;
+  padding: 10px;
+  margin: 0 80px;
+  position: relative;
+
+}
+.login_body .user_info h2{
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  margin: 10px 0;
+}
+.login_body .user_info>p{
+  text-align: left !important;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0;
+  margin-bottom: 100px;
+}
+.login_body .user_info form{
+  display: flex;
+  flex-direction: column;
+}
+.login_body .user_info form label{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-color);
+  margin: 5px 0;
+}
+.login_body .user_info form label input{
+  font-family: 'Times New Roman', Times, serif;
+  height: 30px;
+  outline: none;
+  border: solid var(--main-color) 1px;
+  color: var(--main-color);
+  background-color: var(--moz-background-color);
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.login_body .user_info p{
+  color: var(--main-color);
+  text-align: right;
+}
+.login_body .user_info .login_botton{
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 20px 0;
+  text-align: center;
+}
+.login_body .user_info .login_botton a{
+  color: white;
+  text-decoration: none;
+}
+.login_body .user_info span{
+  font-weight: 700;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 14px;
+}
+.login_body .user_info .loginby{
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: var(--main-color);
+}
+.login_body .user_info .tosignUp{
+  color: var(--main-color);
+  text-align: center;
+}
+.login_body .user_info .tosignUp a{
+  font-size: 15px;
+  color: #37BEB0;
+  text-decoration: none;
+}
+.login_body .Side_img{
+  width: 70%;
+  z-index: 1;
+}
+.login_body  img{
+  width: 100%;
+}
+.blueball{
+  background-color: #37BEB0AB;
+  position: absolute;
+  border-radius: 50%;
+
+}
+ .bbo{
+  width: 80px;
+  height: 80px;
+  top: -240px;
+  right:-120px;
+  z-index: 2;
+  animation: bbone 10s linear infinite;
+
+}
+ .bbt{
+  width: 150px;
+  height: 150px;
+  bottom: -260px;
+  left:-150px;
+  animation: bbTwo 10s linear infinite;
+}
+
+@keyframes bbone{
+  0%,
+  100% {
+    top: -240px;
+    right:-120px;
+  }
+  50%{
+    top: 0px;
+    right:100%;
+  }
+
+}
+@keyframes bbTwo{
+  0%,
+  100% {
+    bottom: -260px;
+    left:-150px;
+  }
+  50%{
+    bottom: -100px;
+    left:100%;
+  }
+
+}
+.varif_info{
+  width: 50%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 80px;
+  position: relative;
+}
+.Vrif{
+  text-align: center;
+  color: var(--main-color);
+  font-size: 20px;
+  margin: 20px 0;
+}
+.user_email{
+  text-align: center;
+  font-size: 30px;
+  color: var(--main-color);
+  font-weight: 400;
+  margin: 20px 0;
+}
+.varDis{
+  width: 300px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 20px;
+  margin: 0 20px;
+}
+.varif_buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.varif_buttons a{
+  text-decoration: none;
+  padding: 10px 50px;
+  margin: 0 10px;
+}
+.varif_buttons #Cancel{
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+  color: var(--main-color);
+  font-size: 20px;
+}
+.varif_buttons #Next{
+  border: solid var(--main-color) 1px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 20px;
+}
+
+.Vrif1{
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.Vrif1_masge{
+  width: 300px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 20px;
+  margin: 0 20px;
+}
+.Code{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+
+}
+.Code input{
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--moz-background-color);
+  border-radius: 10px;
+  border: solid var(--main-color) 1px;
+}
+.varif1_button{
+  margin: 40px;
+}
+.varif1_button #Next{
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 70px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.varif1_check{
+  color: var(--main-color);
+}
+.varif1_check span{
+  color:#37BEB0;
+}
+.landing1_navigation{
+  position: relative;
+  left: -30%;
+}
+.landig1_footer{
+  position: relative;
+  top: -90px;
+}
+
